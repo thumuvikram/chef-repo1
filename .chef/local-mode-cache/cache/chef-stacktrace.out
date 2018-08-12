@@ -1,0 +1,316 @@
+Generated at 2018-08-10 05:17:51 +0530
+Mixlib::ShellOut::ShellCommandFailed: yum_package[httpd] (@recipe_files::/root/chef-repo/cookbooks/apache/recipes/default.rb line 7) had an error: Mixlib::ShellOut::ShellCommandFailed: Expected process to exit with [0], but received '1'
+---- Begin output of ["yum", "-y", "install", "httpd-0:2.4.6-80.el7.centos.1.x86_64"] ----
+STDOUT: Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: centos.excellmedia.net
+ * extras: centos.excellmedia.net
+ * updates: centos.excellmedia.net
+Resolving Dependencies
+--> Running transaction check
+---> Package httpd.x86_64 0:2.4.6-80.el7.centos.1 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package      Arch          Version                        Repository      Size
+================================================================================
+Installing:
+ httpd        x86_64        2.4.6-80.el7.centos.1          updates        2.7 M
+
+Transaction Summary
+================================================================================
+Install  1 Package
+
+Total download size: 2.7 M
+Installed size: 9.4 M
+Downloading packages:
+STDERR: http://mirror.nbrc.ac.in/centos/7.5.1804/os/x86_64/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: mirror.nbrc.ac.in; Unknown error"
+Trying other mirror.
+http://mirror.xeonbd.com/centos/7.5.1804/os/x86_64/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: mirror.xeonbd.com; Unknown error"
+Trying other mirror.
+http://mirror.vbctv.in/centos/7.5.1804/os/x86_64/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: mirror.vbctv.in; Unknown error"
+Trying other mirror.
+http://centos.mirror.snu.edu.in/centos/7.5.1804/os/x86_64/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: centos.mirror.snu.edu.in; Unknown error"
+Trying other mirror.
+http://del-repos.extreme-ix.org/centos/7.5.1804/os/x86_64/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: del-repos.extreme-ix.org; Unknown error"
+Trying other mirror.
+http://mirrors.fibergrid.in/centos/7.5.1804/os/x86_64/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: mirrors.fibergrid.in; Unknown error"
+Trying other mirror.
+http://centos.excellmedia.net/7.5.1804/os/x86_64/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: centos.excellmedia.net; Unknown error"
+Trying other mirror.
+http://mirror.dhakacom.com/centos/7.5.1804/os/x86_64/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: mirror.dhakacom.com; Unknown error"
+Trying other mirror.
+http://centos.myfahim.com/centos/7.5.1804/os/x86_64/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: centos.myfahim.com; Unknown error"
+Trying other mirror.
+http://ftp.iitm.ac.in/centos/7.5.1804/os/x86_64/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: ftp.iitm.ac.in; Unknown error"
+Trying other mirror.
+http://centos-hcm.viettelidc.com.vn/7.5.1804/extras/x86_64/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: centos-hcm.viettelidc.com.vn; Unknown error"
+Trying other mirror.
+http://mirror.vbctv.in/centos/7.5.1804/extras/x86_64/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: mirror.vbctv.in; Unknown error"
+Trying other mirror.
+http://centos.mirror.snu.edu.in/centos/7.5.1804/extras/x86_64/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: centos.mirror.snu.edu.in; Unknown error"
+Trying other mirror.
+http://del-repos.extreme-ix.org/centos/7.5.1804/extras/x86_64/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: del-repos.extreme-ix.org; Unknown error"
+Trying other mirror.
+http://mirrors.fibergrid.in/centos/7.5.1804/extras/x86_64/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: mirrors.fibergrid.in; Unknown error"
+Trying other mirror.
+http://centos.excellmedia.net/7.5.1804/extras/x86_64/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: centos.excellmedia.net; Unknown error"
+Trying other mirror.
+http://mirror.dhakacom.com/centos/7.5.1804/extras/x86_64/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: mirror.dhakacom.com; Unknown error"
+Trying other mirror.
+http://centos.myfahim.com/centos/7.5.1804/extras/x86_64/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: centos.myfahim.com; Unknown error"
+Trying other mirror.
+http://mirror.ehost.vn/centos/7.5.1804/extras/x86_64/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: mirror.ehost.vn; Unknown error"
+Trying other mirror.
+http://ftp.iitm.ac.in/centos/7.5.1804/extras/x86_64/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: ftp.iitm.ac.in; Unknown error"
+Trying other mirror.
+http://mirrors.123host.vn/centos/7.5.1804/updates/x86_64/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: mirrors.123host.vn; Unknown error"
+Trying other mirror.
+http://centos-hcm.viettelidc.com.vn/7.5.1804/updates/x86_64/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: centos-hcm.viettelidc.com.vn; Unknown error"
+Trying other mirror.
+http://mirror.vbctv.in/centos/7.5.1804/updates/x86_64/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: mirror.vbctv.in; Unknown error"
+Trying other mirror.
+http://centos.mirror.snu.edu.in/centos/7.5.1804/updates/x86_64/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: centos.mirror.snu.edu.in; Unknown error"
+Trying other mirror.
+http://del-repos.extreme-ix.org/centos/7.5.1804/updates/x86_64/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: del-repos.extreme-ix.org; Unknown error"
+Trying other mirror.
+http://mirrors.fibergrid.in/centos/7.5.1804/updates/x86_64/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: mirrors.fibergrid.in; Unknown error"
+Trying other mirror.
+http://centos.excellmedia.net/7.5.1804/updates/x86_64/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: centos.excellmedia.net; Unknown error"
+Trying other mirror.
+http://mirror.dhakacom.com/centos/7.5.1804/updates/x86_64/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: mirror.dhakacom.com; Unknown error"
+Trying other mirror.
+http://centos.myfahim.com/centos/7.5.1804/updates/x86_64/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: centos.myfahim.com; Unknown error"
+Trying other mirror.
+http://ftp.iitm.ac.in/centos/7.5.1804/updates/x86_64/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: ftp.iitm.ac.in; Unknown error"
+Trying other mirror.
+http://mirrors.123host.vn/centos/7.5.1804/updates/x86_64/Packages/httpd-2.4.6-80.el7.centos.1.x86_64.rpm: [Errno 14] curl#6 - "Could not resolve host: mirrors.123host.vn; Unknown error"
+Trying other mirror.
+http://centos-hcm.viettelidc.com.vn/7.5.1804/updates/x86_64/Packages/httpd-2.4.6-80.el7.centos.1.x86_64.rpm: [Errno 14] curl#6 - "Could not resolve host: centos-hcm.viettelidc.com.vn; Unknown error"
+Trying other mirror.
+http://mirror.vbctv.in/centos/7.5.1804/updates/x86_64/Packages/httpd-2.4.6-80.el7.centos.1.x86_64.rpm: [Errno 14] curl#6 - "Could not resolve host: mirror.vbctv.in; Unknown error"
+Trying other mirror.
+http://centos.mirror.snu.edu.in/centos/7.5.1804/updates/x86_64/Packages/httpd-2.4.6-80.el7.centos.1.x86_64.rpm: [Errno 14] curl#6 - "Could not resolve host: centos.mirror.snu.edu.in; Unknown error"
+Trying other mirror.
+http://del-repos.extreme-ix.org/centos/7.5.1804/updates/x86_64/Packages/httpd-2.4.6-80.el7.centos.1.x86_64.rpm: [Errno 14] curl#6 - "Could not resolve host: del-repos.extreme-ix.org; Unknown error"
+Trying other mirror.
+http://mirrors.fibergrid.in/centos/7.5.1804/updates/x86_64/Packages/httpd-2.4.6-80.el7.centos.1.x86_64.rpm: [Errno 14] curl#6 - "Could not resolve host: mirrors.fibergrid.in; Unknown error"
+Trying other mirror.
+http://centos.excellmedia.net/7.5.1804/updates/x86_64/Packages/httpd-2.4.6-80.el7.centos.1.x86_64.rpm: [Errno 14] curl#6 - "Could not resolve host: centos.excellmedia.net; Unknown error"
+Trying other mirror.
+http://mirror.dhakacom.com/centos/7.5.1804/updates/x86_64/Packages/httpd-2.4.6-80.el7.centos.1.x86_64.rpm: [Errno 14] curl#6 - "Could not resolve host: mirror.dhakacom.com; Unknown error"
+Trying other mirror.
+http://centos.myfahim.com/centos/7.5.1804/updates/x86_64/Packages/httpd-2.4.6-80.el7.centos.1.x86_64.rpm: [Errno 14] curl#6 - "Could not resolve host: centos.myfahim.com; Unknown error"
+Trying other mirror.
+http://ftp.iitm.ac.in/centos/7.5.1804/updates/x86_64/Packages/httpd-2.4.6-80.el7.centos.1.x86_64.rpm: [Errno 14] curl#6 - "Could not resolve host: ftp.iitm.ac.in; Unknown error"
+Trying other mirror.
+
+
+Error downloading packages:
+  httpd-2.4.6-80.el7.centos.1.x86_64: [Errno 256] No more mirrors to try.
+---- End output of ["yum", "-y", "install", "httpd-0:2.4.6-80.el7.centos.1.x86_64"] ----
+Ran ["yum", "-y", "install", "httpd-0:2.4.6-80.el7.centos.1.x86_64"] returned 1
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/mixlib-shellout-2.3.2/lib/mixlib/shellout.rb:293:in `invalid!'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/mixlib-shellout-2.3.2/lib/mixlib/shellout.rb:280:in `error!'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/mixin/shell_out.rb:124:in `shell_out!'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/mixin/shell_out.rb:76:in `shell_out_compact!'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/mixin/shell_out.rb:95:in `shell_out_compact_timeout!'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/provider/package/yum.rb:263:in `yum'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/provider/package/yum.rb:123:in `install_package'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/provider/package.rb:102:in `block (3 levels) in <class:Package>'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/provider/package.rb:269:in `multipackage_api_adapter'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/provider/package.rb:101:in `block (2 levels) in <class:Package>'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/mixin/why_run.rb:51:in `add_action'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/provider.rb:227:in `converge_by'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/provider/package.rb:100:in `block in <class:Package>'
+(eval):2:in `block in action_install'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/provider.rb:236:in `instance_eval'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/provider.rb:236:in `compile_and_converge_action'
+(eval):2:in `action_install'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/provider.rb:182:in `run_action'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/resource.rb:577:in `run_action'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/runner.rb:70:in `run_action'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/runner.rb:98:in `block (2 levels) in converge'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/runner.rb:98:in `each'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/runner.rb:98:in `block in converge'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/resource_collection/resource_list.rb:94:in `block in execute_each_resource'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/resource_collection/stepable_iterator.rb:114:in `call_iterator_block'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/resource_collection/stepable_iterator.rb:85:in `step'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/resource_collection/stepable_iterator.rb:103:in `iterate'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/resource_collection/stepable_iterator.rb:55:in `each_with_index'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/resource_collection/resource_list.rb:92:in `execute_each_resource'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/runner.rb:97:in `converge'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/client.rb:717:in `block in converge'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/client.rb:712:in `catch'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/client.rb:712:in `converge'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/client.rb:751:in `converge_and_save'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/client.rb:283:in `run'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/application.rb:303:in `run_with_graceful_exit_option'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/application.rb:279:in `block in run_chef_client'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/local_mode.rb:44:in `with_server_connectivity'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/application.rb:261:in `run_chef_client'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/application/client.rb:441:in `run_application'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/application.rb:66:in `run'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/bin/chef-client:26:in `<top (required)>'
+/opt/chefdk/bin/chef-client:272:in `load'
+/opt/chefdk/bin/chef-client:272:in `<main>'
+
+>>>> Caused by Mixlib::ShellOut::ShellCommandFailed: Expected process to exit with [0], but received '1'
+---- Begin output of ["yum", "-y", "install", "httpd-0:2.4.6-80.el7.centos.1.x86_64"] ----
+STDOUT: Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: centos.excellmedia.net
+ * extras: centos.excellmedia.net
+ * updates: centos.excellmedia.net
+Resolving Dependencies
+--> Running transaction check
+---> Package httpd.x86_64 0:2.4.6-80.el7.centos.1 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package      Arch          Version                        Repository      Size
+================================================================================
+Installing:
+ httpd        x86_64        2.4.6-80.el7.centos.1          updates        2.7 M
+
+Transaction Summary
+================================================================================
+Install  1 Package
+
+Total download size: 2.7 M
+Installed size: 9.4 M
+Downloading packages:
+STDERR: http://mirror.nbrc.ac.in/centos/7.5.1804/os/x86_64/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: mirror.nbrc.ac.in; Unknown error"
+Trying other mirror.
+http://mirror.xeonbd.com/centos/7.5.1804/os/x86_64/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: mirror.xeonbd.com; Unknown error"
+Trying other mirror.
+http://mirror.vbctv.in/centos/7.5.1804/os/x86_64/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: mirror.vbctv.in; Unknown error"
+Trying other mirror.
+http://centos.mirror.snu.edu.in/centos/7.5.1804/os/x86_64/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: centos.mirror.snu.edu.in; Unknown error"
+Trying other mirror.
+http://del-repos.extreme-ix.org/centos/7.5.1804/os/x86_64/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: del-repos.extreme-ix.org; Unknown error"
+Trying other mirror.
+http://mirrors.fibergrid.in/centos/7.5.1804/os/x86_64/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: mirrors.fibergrid.in; Unknown error"
+Trying other mirror.
+http://centos.excellmedia.net/7.5.1804/os/x86_64/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: centos.excellmedia.net; Unknown error"
+Trying other mirror.
+http://mirror.dhakacom.com/centos/7.5.1804/os/x86_64/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: mirror.dhakacom.com; Unknown error"
+Trying other mirror.
+http://centos.myfahim.com/centos/7.5.1804/os/x86_64/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: centos.myfahim.com; Unknown error"
+Trying other mirror.
+http://ftp.iitm.ac.in/centos/7.5.1804/os/x86_64/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: ftp.iitm.ac.in; Unknown error"
+Trying other mirror.
+http://centos-hcm.viettelidc.com.vn/7.5.1804/extras/x86_64/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: centos-hcm.viettelidc.com.vn; Unknown error"
+Trying other mirror.
+http://mirror.vbctv.in/centos/7.5.1804/extras/x86_64/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: mirror.vbctv.in; Unknown error"
+Trying other mirror.
+http://centos.mirror.snu.edu.in/centos/7.5.1804/extras/x86_64/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: centos.mirror.snu.edu.in; Unknown error"
+Trying other mirror.
+http://del-repos.extreme-ix.org/centos/7.5.1804/extras/x86_64/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: del-repos.extreme-ix.org; Unknown error"
+Trying other mirror.
+http://mirrors.fibergrid.in/centos/7.5.1804/extras/x86_64/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: mirrors.fibergrid.in; Unknown error"
+Trying other mirror.
+http://centos.excellmedia.net/7.5.1804/extras/x86_64/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: centos.excellmedia.net; Unknown error"
+Trying other mirror.
+http://mirror.dhakacom.com/centos/7.5.1804/extras/x86_64/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: mirror.dhakacom.com; Unknown error"
+Trying other mirror.
+http://centos.myfahim.com/centos/7.5.1804/extras/x86_64/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: centos.myfahim.com; Unknown error"
+Trying other mirror.
+http://mirror.ehost.vn/centos/7.5.1804/extras/x86_64/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: mirror.ehost.vn; Unknown error"
+Trying other mirror.
+http://ftp.iitm.ac.in/centos/7.5.1804/extras/x86_64/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: ftp.iitm.ac.in; Unknown error"
+Trying other mirror.
+http://mirrors.123host.vn/centos/7.5.1804/updates/x86_64/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: mirrors.123host.vn; Unknown error"
+Trying other mirror.
+http://centos-hcm.viettelidc.com.vn/7.5.1804/updates/x86_64/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: centos-hcm.viettelidc.com.vn; Unknown error"
+Trying other mirror.
+http://mirror.vbctv.in/centos/7.5.1804/updates/x86_64/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: mirror.vbctv.in; Unknown error"
+Trying other mirror.
+http://centos.mirror.snu.edu.in/centos/7.5.1804/updates/x86_64/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: centos.mirror.snu.edu.in; Unknown error"
+Trying other mirror.
+http://del-repos.extreme-ix.org/centos/7.5.1804/updates/x86_64/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: del-repos.extreme-ix.org; Unknown error"
+Trying other mirror.
+http://mirrors.fibergrid.in/centos/7.5.1804/updates/x86_64/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: mirrors.fibergrid.in; Unknown error"
+Trying other mirror.
+http://centos.excellmedia.net/7.5.1804/updates/x86_64/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: centos.excellmedia.net; Unknown error"
+Trying other mirror.
+http://mirror.dhakacom.com/centos/7.5.1804/updates/x86_64/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: mirror.dhakacom.com; Unknown error"
+Trying other mirror.
+http://centos.myfahim.com/centos/7.5.1804/updates/x86_64/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: centos.myfahim.com; Unknown error"
+Trying other mirror.
+http://ftp.iitm.ac.in/centos/7.5.1804/updates/x86_64/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: ftp.iitm.ac.in; Unknown error"
+Trying other mirror.
+http://mirrors.123host.vn/centos/7.5.1804/updates/x86_64/Packages/httpd-2.4.6-80.el7.centos.1.x86_64.rpm: [Errno 14] curl#6 - "Could not resolve host: mirrors.123host.vn; Unknown error"
+Trying other mirror.
+http://centos-hcm.viettelidc.com.vn/7.5.1804/updates/x86_64/Packages/httpd-2.4.6-80.el7.centos.1.x86_64.rpm: [Errno 14] curl#6 - "Could not resolve host: centos-hcm.viettelidc.com.vn; Unknown error"
+Trying other mirror.
+http://mirror.vbctv.in/centos/7.5.1804/updates/x86_64/Packages/httpd-2.4.6-80.el7.centos.1.x86_64.rpm: [Errno 14] curl#6 - "Could not resolve host: mirror.vbctv.in; Unknown error"
+Trying other mirror.
+http://centos.mirror.snu.edu.in/centos/7.5.1804/updates/x86_64/Packages/httpd-2.4.6-80.el7.centos.1.x86_64.rpm: [Errno 14] curl#6 - "Could not resolve host: centos.mirror.snu.edu.in; Unknown error"
+Trying other mirror.
+http://del-repos.extreme-ix.org/centos/7.5.1804/updates/x86_64/Packages/httpd-2.4.6-80.el7.centos.1.x86_64.rpm: [Errno 14] curl#6 - "Could not resolve host: del-repos.extreme-ix.org; Unknown error"
+Trying other mirror.
+http://mirrors.fibergrid.in/centos/7.5.1804/updates/x86_64/Packages/httpd-2.4.6-80.el7.centos.1.x86_64.rpm: [Errno 14] curl#6 - "Could not resolve host: mirrors.fibergrid.in; Unknown error"
+Trying other mirror.
+http://centos.excellmedia.net/7.5.1804/updates/x86_64/Packages/httpd-2.4.6-80.el7.centos.1.x86_64.rpm: [Errno 14] curl#6 - "Could not resolve host: centos.excellmedia.net; Unknown error"
+Trying other mirror.
+http://mirror.dhakacom.com/centos/7.5.1804/updates/x86_64/Packages/httpd-2.4.6-80.el7.centos.1.x86_64.rpm: [Errno 14] curl#6 - "Could not resolve host: mirror.dhakacom.com; Unknown error"
+Trying other mirror.
+http://centos.myfahim.com/centos/7.5.1804/updates/x86_64/Packages/httpd-2.4.6-80.el7.centos.1.x86_64.rpm: [Errno 14] curl#6 - "Could not resolve host: centos.myfahim.com; Unknown error"
+Trying other mirror.
+http://ftp.iitm.ac.in/centos/7.5.1804/updates/x86_64/Packages/httpd-2.4.6-80.el7.centos.1.x86_64.rpm: [Errno 14] curl#6 - "Could not resolve host: ftp.iitm.ac.in; Unknown error"
+Trying other mirror.
+
+
+Error downloading packages:
+  httpd-2.4.6-80.el7.centos.1.x86_64: [Errno 256] No more mirrors to try.
+---- End output of ["yum", "-y", "install", "httpd-0:2.4.6-80.el7.centos.1.x86_64"] ----
+Ran ["yum", "-y", "install", "httpd-0:2.4.6-80.el7.centos.1.x86_64"] returned 1
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/mixlib-shellout-2.3.2/lib/mixlib/shellout.rb:293:in `invalid!'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/mixlib-shellout-2.3.2/lib/mixlib/shellout.rb:280:in `error!'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/mixin/shell_out.rb:124:in `shell_out!'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/mixin/shell_out.rb:76:in `shell_out_compact!'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/mixin/shell_out.rb:95:in `shell_out_compact_timeout!'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/provider/package/yum.rb:263:in `yum'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/provider/package/yum.rb:123:in `install_package'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/provider/package.rb:102:in `block (3 levels) in <class:Package>'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/provider/package.rb:269:in `multipackage_api_adapter'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/provider/package.rb:101:in `block (2 levels) in <class:Package>'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/mixin/why_run.rb:51:in `add_action'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/provider.rb:227:in `converge_by'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/provider/package.rb:100:in `block in <class:Package>'
+(eval):2:in `block in action_install'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/provider.rb:236:in `instance_eval'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/provider.rb:236:in `compile_and_converge_action'
+(eval):2:in `action_install'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/provider.rb:182:in `run_action'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/resource.rb:577:in `run_action'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/runner.rb:70:in `run_action'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/runner.rb:98:in `block (2 levels) in converge'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/runner.rb:98:in `each'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/runner.rb:98:in `block in converge'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/resource_collection/resource_list.rb:94:in `block in execute_each_resource'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/resource_collection/stepable_iterator.rb:114:in `call_iterator_block'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/resource_collection/stepable_iterator.rb:85:in `step'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/resource_collection/stepable_iterator.rb:103:in `iterate'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/resource_collection/stepable_iterator.rb:55:in `each_with_index'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/resource_collection/resource_list.rb:92:in `execute_each_resource'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/runner.rb:97:in `converge'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/client.rb:717:in `block in converge'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/client.rb:712:in `catch'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/client.rb:712:in `converge'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/client.rb:751:in `converge_and_save'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/client.rb:283:in `run'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/application.rb:303:in `run_with_graceful_exit_option'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/application.rb:279:in `block in run_chef_client'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/local_mode.rb:44:in `with_server_connectivity'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/application.rb:261:in `run_chef_client'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/application/client.rb:441:in `run_application'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/application.rb:66:in `run'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/bin/chef-client:26:in `<top (required)>'
+/opt/chefdk/bin/chef-client:272:in `load'
+/opt/chefdk/bin/chef-client:272:in `<main>'
